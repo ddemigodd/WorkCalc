@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="intro">
+      <div class="container">
+        <div class="calculator">
+          <p>
+            Ваша ставка
+            <input id="salary" type="number" placeholder="20000 р." />
+          </p>
+          <p>
+            Рабочие часы <b>общие</b>
+            <input id="workTime" type="number" placeholder="159 ч." />
+          </p>
+          <p>
+            Рабочие часы <b>ночные/выходные</b>
+            <input id="wikendTime" type="number" placeholder="5 ч." />
+          </p>
+          <p>
+            Часов в месяце
+            <input id="monthTime" type="number" placeholder="150 ч." />
+          </p>
+          <p>
+            Кол-во бонусов
+            <input id="bonusCount" type="number" placeholder="2 шт." />
+          </p>
+          <p>
+            <input
+              id="resultButton"
+              onclick="calc()"
+              type="button"
+              value="Расчитать"
+            />
+          </p>
+          <p id="result">Итого ≈ 0 рублей</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculate.js"></script>
+  </body>
+</html>
