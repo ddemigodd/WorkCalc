@@ -40,12 +40,23 @@
             />
           </p>
           <p>
-            Часов в месяце
+            Рабочий месяц
+            <select id="monthSelect" onchange="changeMonth()" size="1">
+              <option value="167">Июнь</option>
+              <option value="184">Июль</option>
+              <option value="168">Август</option>
+              <option value="176">Сентябрь</option>
+              <option value="176">Октябрь</option>
+              <option value="159">Ноябрь</option>
+              <option value="183">Декабрь</option>
+            </select>
             <input
+              readonly
               class="enter"
               id="monthTime"
               type="number"
               placeholder="150 ч."
+              value="167"
             />
           </p>
           <p>

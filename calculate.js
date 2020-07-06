@@ -6,7 +6,9 @@ function calc() {
   if (!parseFloat(result)) {
     document.getElementById("result").innerHTML = "Вы допустили ошибку";
   } else {
-    document.getElementById("result").innerHTML = `Итого ≈ ${result} рублей`;
+    document.getElementById("result").innerHTML = `Итого ≈ ${result.toFixed(
+      2
+    )} рублей`;
   }
 }
 
@@ -36,4 +38,15 @@ function getNumber(id) {
 
 function test() {
   console.log(getNumber("salary"));
+}
+
+function setOnLoad() {
+  document.getElementById("monthTime").value = document.getElementById(
+    "monthSelect"
+  ).value;
+}
+function changeMonth() {
+  document.getElementById("monthTime").value = document.getElementById(
+    "monthSelect"
+  ).value;
 }
