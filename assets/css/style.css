@@ -56,11 +56,53 @@ p {
   border-style: solid;
   border-radius: 10px;
 }
-/*input*/
-.haha {
-  text-align: right;
-  width: 130px;
+
+.questionIco {
+  width: 15px;
+  background-color: wheat;
+  border-radius: 10px;
 }
+
+.help {
+  color: #2c8505;
+  outline: none; /*цвет подсказки*/
+  cursor: help;
+  text-decoration: none; /*вид курсора при наведении, можно заменить на pointer*/
+  position: relative; /*позиция*/
+}
+
+/*положение всплывающей подсказки*/
+.help span {
+  margin-left: -999em;
+  position: absolute;
+}
+
+/*подсказка при наведении курсора*/
+.help:hover span {
+  font-family: Verdana, Tahoma, Geneva, sans-serif; /*шрифт*/
+  position: absolute; /*позиция*/
+  left: 10px;
+  top: 25px;
+  z-index: 99;
+  margin-left: 0;
+  width: 140px; /*ширина блока подсказки*/
+}
+
+/*параметры изображения*/
+.help:hover img {
+  border: 0;
+}
+
+/*блок всплывающей подсказки*/
+.airhelp {
+  background: none repeat scroll 0 0 rgb(3, 31, 68); /*цвет и прозрачность фона*/
+  border: 1px solid #2b82b8; /*параметры бордюра*/
+  border-radius: 5px; /*закругление углов*/
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /*тень блока*/
+  color: #fff; /*цвет шрифта всплывающей подсказки*/
+  padding: 5px; /*внутренний отступ*/
+}
+
 .enter {
   border: 1px solid #9e9e9e;
   color: #000000;
@@ -75,7 +117,19 @@ p {
   width: 60px;
 }
 .resultButton {
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50; /* Green */
   margin-right: 3px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.resultButton {
+  background-color: #16436d; /* Green */
+  color: white;
 }
 
 #result {
