@@ -12,44 +12,61 @@
     <div class="intro">
       <div class="container">
         <div class="calculator">
-          <p>
-            Ваша ставка
-            <input
+          <div class="flex">
+            <div class="namespace">
+              <p>Ваша ставка</p>
+            </div>
+            <div class="entercontainer">
+              <input
               class="enter"
               id="salary"
               type="number"
               placeholder="20000 р."
-            />
-          </p>
-          <p>
-            <a class="help" href="#"
-              ><img
-                class="questionIco"
-                src="./assets/images/question.png"
-                alt="подсказка"
-              /><span class="airhelp">С вычетом обедов!</span>
-            </a>
-            Рабочие часы
-            <b>общие</b>
-            <input
+              >
+            </div>
+          </div>
+          
+          <div class="flex">
+            <div class="namespace">
+              <p>Рабочие часы <b>общие</b>
+                <a class="help" href="#">
+                  <img
+                  class="questionIco"
+                  src="./assets/images/question.png"
+                  alt="подсказка"
+                  />
+                 <span class="airhelp">С вычетом обедов!</span>
+                </a>
+              </p>
+            </div>
+            <div class="hourtext entercontainer">
+              <input
               class="enter"
               id="workTime"
               type="number"
               placeholder="159 ч."
-            />
-          </p>
-          <p>
-            Рабочие часы <b>ночные/выходные</b>
-            <input
+              />
+              </div>
+            </div>
+
+          <div class="flex">
+            <div class="namespace">
+              <p>Рабочие часы <b>ночные/выходные</b></p>
+            </div>
+           <div class="entercontainer">
+              <input
               class="enter"
               id="wikendTime"
               type="number"
               placeholder="5 ч."
-            />
-          </p>
-          <p>
-            Рабочий месяц
-            <select id="monthSelect" onchange="changeMonth()" size="1">
+             />
+           </div>
+         </div>
+
+        <div class="flex">
+          <div class="namespace">
+            <p>Рабочий месяц</p>
+            <select class="monthSelector" id="monthSelect" onchange="changeMonth()" size="1">
               <option value="120">Январь</option>
               <option value="151">Февраль</option>
               <option value="176">Март</option>
@@ -63,6 +80,9 @@
               <option value="159">Ноябрь</option>
               <option value="176">Декабрь</option>
             </select>
+          </div>
+          <div class="entercontainer">
+            
             <input
               readonly
               class="enter"
@@ -71,28 +91,38 @@
               placeholder="150 ч."
               value="120"
             />
-          </p>
-          <p>
-            Кол-во бонусов
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="namespace">
+            <p>Кол-во бонусов</p>
+          </div>
+          <div class="entercontainer">
             <input
               class="enter"
               id="bonusCount"
               type="number"
               placeholder="2 шт."
             />
-          </p>
-          <p>
-            <input
-              class="resultButton"
-              onclick="calc()"
-              type="button"
-              value="Расчитать"
-            />
-          </p>
-          <p id="result">Итого ≈ 0 рублей</p>
+          </div>
         </div>
-      </div>
-    </div>
+
+        <div class="flex">
+          <div class="namespace">
+            <p>
+              <input
+                class="resultButton"
+                onclick="calc()"
+                type="button"
+                value="Расчитать"
+              />
+            </p>
+          </div>
+          <div class="entercontainer">
+            <p id="result">Итого ≈ 0 рублей</p>
+          </div>
+        </div>
 
     <script src="calculate.js"></script>
   </body>

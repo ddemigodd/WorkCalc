@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.2;
   color: #000;
 }
 
@@ -36,27 +36,35 @@ p {
   width: 100%;
   height: 100vh;
   background-color: #333333;
-  background-image: linear-gradient(to bottom, #333333, #000000);
-  color: white;
+  background-image: linear-gradient(to bottom right, rgb(40, 148, 123), rgb(50, 142, 131), rgb(61, 135, 138), rgb(71, 129, 146), rgb(82, 122, 153), rgb(92, 116, 161), rgb(84, 104, 141), rgb(75, 93, 120), rgb(67, 81, 100), rgb(59, 69, 80), rgb(50, 58, 59), rgb(42, 46, 39));  color: white;
   border-color: rgba(255, 255, 255, 0.3);
 }
 
 /*Calculator*/
 
 .calculator {
+  padding: 10px;
   display: block;
   text-shadow: 1px 1px 0 black;
   text-align: right;
 
-  background-color: #333333;
-  background-image: linear-gradient(to bottom, #39365a, #2b1544);
-  color: white;
+  color:white;
   border-color: rgba(255, 255, 255, 0.3);
-  border-width: 3px;
-  border-style: solid;
+}
+.flex{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid wheat;
   border-radius: 10px;
 }
+.namespace{
+  text-align: center;
+  margin: auto;
+  padding: 4px 1px 4px 4px;
 
+}
 .questionIco {
   width: 15px;
   background-color: wheat;
@@ -104,20 +112,30 @@ p {
 }
 
 .enter {
+
   border: 1px solid #9e9e9e;
   color: #000000;
-  padding: 3px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 2px;
-  margin-right: 3px;
-  font-size: 11px;
+  padding: 5px;
+  font-size: 20px;
   font-family: Verdana;
   background: #fff;
-  width: 60px;
+  height:40px;
+  width: 140px;
+}
+.entercontainer{
+  width: 40%;
+  padding: 4px 4px 4px 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.monthSelector{
+  padding: 1px;
+  font-size: 20px;
+  height: 30px;
+  min-width: 100%;
 }
 .resultButton {
-  font-size: 12px;
+  font-size: 20px;
   padding: 4px;
   border-radius: 5px;
   background-color: white;
@@ -165,4 +183,4 @@ input[type="number"] {
   font-style: italic;
   opacity: 0.3;
 }
-/**/
+
