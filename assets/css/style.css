@@ -34,7 +34,7 @@ p {
 
 .intro {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #333333;
   background-image: linear-gradient(to bottom right, rgb(40, 148, 123), rgb(50, 142, 131), rgb(61, 135, 138), rgb(71, 129, 146), rgb(82, 122, 153), rgb(92, 116, 161), rgb(84, 104, 141), rgb(75, 93, 120), rgb(67, 81, 100), rgb(59, 69, 80), rgb(50, 58, 59), rgb(42, 46, 39));  color: white;
   border-color: rgba(255, 255, 255, 0.3);
@@ -59,6 +59,7 @@ p {
   border: 2px solid wheat;
   border-radius: 10px;
 }
+
 .namespace{
   text-align: center;
   margin: auto;
@@ -184,3 +185,8 @@ input[type="number"] {
   opacity: 0.3;
 }
 
+@media(max-height: 536px){
+  .calculator{
+    padding: 100px;
+  }
+}
