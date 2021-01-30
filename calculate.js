@@ -6,9 +6,9 @@ function calc() {
   if (!parseFloat(result)) {
     document.getElementById("result").innerHTML = "Вы допустили ошибку";
   } else {
-    document.getElementById("result").innerHTML = `Итого ≈ ${result.toFixed(
-      2
-    )} рублей`;
+    document.getElementById("result").innerHTML = `${result.toFixed(
+      0
+    )} руб.`;
   }
 }
 
