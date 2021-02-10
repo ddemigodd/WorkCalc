@@ -1,8 +1,16 @@
 function calc() {
+  let result;
+  let averageTime = 1972;/*Work hour in 2021*/
   let data = getArrNumber();
-  let inHour = data[0] / data[3];
-  let result =
-    (data[1] - data[2]) * inHour + data[2] * inHour * 1.3 + data[4] * 500;
+  let inHour = data[0] / (averageTime/12);/*Average salary in one hour*/   
+  if(data[1] >= data[3]){
+    result = ((data[1] - data[2] - data[3]) * inHour + (data[2] * inHour * 1.3) + (data[4] * 500) + data[0]);
+  }
+  else{
+    inHour = data[0] / data[3];
+    result = ((data[1] - data[2] - data[3]) * inHour + (data[2] * inHour * 1.3) + (data[4] * 500) + data[0]);
+  }
+  
   if (!parseFloat(result)) {
     document.getElementById("result").innerHTML = "Вы допустили ошибку";
   } else {
@@ -11,6 +19,7 @@ function calc() {
     )} руб.`;
   }
 }
+
 
 function getArrNumber() {
   const dataString = [
