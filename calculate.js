@@ -1,6 +1,6 @@
 function calc() {
   let result;
-  let averageTime = 1973;/*Work hour in 2022*/
+  let averageTime = 1979;/*Work hour in 2024*/
   let data = getArrNumber();
   let inHour = data[0] / (averageTime/12);/*Average salary in one hour*/   
   if(data[1] >= data[3]){
